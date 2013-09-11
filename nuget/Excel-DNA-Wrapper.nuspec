@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Excel-DNA-Wrapper</id>
+        <version>0.30.3.1</version>
+        <title>Excel-DNA-Wrapper</title>
+        <authors>Caio Proiete</authors>
+        <owners>Caio Proiete</owners>
+        <licenseUrl>http://choosealicense.com/licenses/apache/</licenseUrl>
+        <projectUrl>https://github.com/CaioProiete/Excel-DNA-Wrapper</projectUrl>
+        <iconUrl>http://caioproiete.github.io/Excel-DNA-Wrapper/images/nuget-icon.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Excel-DNA-Wrapper is a library that wraps Excel-DNA classes for Excel such as ExcelDnaUtil, ExcelAsyncUtil, and many other classes so you can easily mock them and write unit tests against your Excel Add-Ins built with Excel-DNA.</description>
+        <summary>Wrapper for Excel-DNA classes for unit testing of Excel Add-Ins.</summary>
+        <releaseNotes />
+        <copyright />
+        <tags>mock mockobjects tdd unit-testing excel-dna excel</tags>
+        <dependencies>
+            <dependency id="Excel-DNA" version="0.30.3" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="..\src\ExcelDna.Wrapper\bin\Release\ExcelDna.Integration.Wrapper.dll" target="lib\net40\ExcelDna.Integration.Wrapper.dll" />
+    </files>
+</package>
