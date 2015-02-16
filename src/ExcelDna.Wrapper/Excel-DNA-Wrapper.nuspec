@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>Excel-DNA-Wrapper</id>
-        <version>$Version$</version>
+        <version>$version$</version>
         <title>Excel-DNA-Wrapper</title>
         <authors>Caio Proiete</authors>
         <owners>Caio Proiete</owners>
@@ -25,6 +25,5 @@
     <files>
         <file src="bin\$Configuration$\ExcelDna.Integration.Wrapper.dll" target="lib\net40\ExcelDna.Integration.Wrapper.dll" />
         <file src="bin\$Configuration$\ExcelDna.Integration.Wrapper.pdb" target="lib\net40\ExcelDna.Integration.Wrapper.pdb" />
-        <file src="**\*.cs" target="src" />
     </files>
 </package>

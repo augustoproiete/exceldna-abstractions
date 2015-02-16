@@ -5,11 +5,13 @@ namespace ExcelDna.Integration
 {
     public abstract class ExcelAsyncUtilBase : IExcelAsyncUtil
     {
+        [Obsolete("ExcelAsyncUtilBase.Initialize is no longer required. The call can be removed.")]
         public virtual void Initialize()
         {
             throw new NotImplementedException();
         }
 
+        [Obsolete("ExcelAsyncUtilBase.Uninitialize is no longer required. The call can be removed.")]
         public virtual void Uninitialize()
         {
             throw new NotImplementedException();

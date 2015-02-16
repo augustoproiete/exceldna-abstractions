@@ -1,14 +1,17 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 
 namespace ExcelDna.Integration
 {
     public class ExcelAsyncUtilWrapper : ExcelAsyncUtilBase
     {
+        [Obsolete("ExcelAsyncUtilWrapper.Initialize is no longer required. The call can be removed.")]
         public override void Initialize()
         {
             ExcelAsyncUtil.Initialize();
         }
 
+        [Obsolete("ExcelAsyncUtilWrapper.Uninitialize is no longer required. The call can be removed.")]
         public override void Uninitialize()
         {
             ExcelAsyncUtil.Uninitialize();
