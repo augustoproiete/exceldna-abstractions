@@ -41,5 +41,17 @@ namespace ExcelDna.Integration.Abstractions
         {
             ExcelAsyncUtil.QueueAsMacro(callback, state);
         }
+
+        public override event ExcelAction CalculationCanceled
+        {
+            add => ExcelAsyncUtil.CalculationCanceled += value;
+            remove => ExcelAsyncUtil.CalculationCanceled -= value;
+        }
+
+        public override event ExcelAction CalculationEnded
+        {
+            add => ExcelAsyncUtil.CalculationEnded += value;
+            remove => ExcelAsyncUtil.CalculationEnded -= value;
+        }
     }
 }

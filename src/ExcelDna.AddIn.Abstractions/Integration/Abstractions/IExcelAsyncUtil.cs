@@ -16,5 +16,8 @@ namespace ExcelDna.Integration.Abstractions
         void QueueMacro(string macroName);
         void QueueAsMacro(ExcelAction action);
         void QueueAsMacro(SendOrPostCallback callback, object state);
+
+        event ExcelAction CalculationCanceled;
+        event ExcelAction CalculationEnded;
     }
 }

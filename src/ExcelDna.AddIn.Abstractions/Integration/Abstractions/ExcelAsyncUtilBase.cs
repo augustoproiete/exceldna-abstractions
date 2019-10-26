@@ -41,5 +41,17 @@ namespace ExcelDna.Integration.Abstractions
         {
             throw new NotImplementedException();
         }
+
+        public virtual event ExcelAction CalculationCanceled
+        {
+            add => throw new NotImplementedException();
+            remove => throw new NotImplementedException();
+        }
+
+        public virtual event ExcelAction CalculationEnded
+        {
+            add => throw new NotImplementedException();
+            remove => throw new NotImplementedException();
+        }
     }
 }
