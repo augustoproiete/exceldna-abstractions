@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6A6312E5-43BD-498D-B3E7-5BF6940172CD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExcelDna</RootNamespace>
+    <AssemblyName>ExcelDna.AddIn.Abstractions</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExcelDna.Integration, Version=0.33.5730.40390, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\ExcelDna.Integration.0.33.9\lib\ExcelDna.Integration.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComInterop\ComServerBase.cs" />
+    <Compile Include="ComInterop\ComServerWrapper.cs" />
+    <Compile Include="ComInterop\IComServer.cs" />
+    <Compile Include="Integration\CustomUI\ExcelComAddInHelperBase.cs" />
+    <Compile Include="Integration\CustomUI\ExcelComAddInHelperWrapper.cs" />
+    <Compile Include="Integration\CustomUI\IExcelComAddInHelper.cs" />
+    <Compile Include="Integration\ExcelAsyncUtilBase.cs" />
+    <Compile Include="Integration\ExcelAsyncUtilWrapper.cs" />
+    <Compile Include="Integration\ExcelDnaUtilBase.cs" />
+    <Compile Include="Integration\ExcelDnaUtilWrapper.cs" />
+    <Compile Include="Integration\ExcelReferenceBase.cs" />
+    <Compile Include="Integration\ExcelReferenceWrapper.cs" />
+    <Compile Include="Integration\IExcelDnaUtil.cs" />
+    <Compile Include="Integration\ExcelErrorUtilBase.cs" />
+    <Compile Include="Integration\ExcelErrorUtilWrapper.cs" />
+    <Compile Include="Integration\ExcelIntegrationBase.cs" />
+    <Compile Include="Integration\ExcelIntegrationWrapper.cs" />
+    <Compile Include="Integration\IExcelAsyncUtil.cs" />
+    <Compile Include="Integration\IExcelErrorUtil.cs" />
+    <Compile Include="Integration\IExcelIntegration.cs" />
+    <Compile Include="Integration\IExcelReference.cs" />
+    <Compile Include="Integration\IXlCall.cs" />
+    <Compile Include="Logging\ILogDisplay.cs" />
+    <Compile Include="Logging\LogDisplayBase.cs" />
+    <Compile Include="Logging\LogDisplayWrapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Integration\XlCallBase.cs" />
+    <Compile Include="Integration\XlCallWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

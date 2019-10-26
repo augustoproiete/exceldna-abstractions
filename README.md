@@ -1,8 +1,3 @@
-Excel-DNA-Wrapper
-==============
+# ExcelDna.AddIn.Abstractions [![NuGet Version](http://img.shields.io/nuget/v/ExcelDna.AddIn.Abstractions.svg?style=flat)](https://www.nuget.org/packages/ExcelDna.AddIn.Abstractions/) [![License](https://img.shields.io/github/license/caioproiete/exceldna-addin-abstractions.svg)](LICENSE)
 
-Compatible with Excel-DNA v0.33.9
-
-[![Latest version](https://img.shields.io/nuget/v/Excel-DNA-Wrapper.svg)](https://www.nuget.org/packages/EmptyLicensesLicx)
-[![Build status](https://ci.appveyor.com/api/projects/status/f4hvmosq6009boty)](https://ci.appveyor.com/project/CaioProiete/excel-dna-wrapper)
-[![License](http://img.shields.io/:license-MIT-blue.svg)](https://opensource.org/licenses/mit-license.php)
+`ExcelDna.AddIn.Abstractions` allows you to mock / unit test Excel-DNA Add-ins

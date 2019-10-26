@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelDna.AddIn.Abstractions", "src\ExcelDna.AddIn.Abstractions\ExcelDna.AddIn.Abstractions.csproj", "{6A6312E5-43BD-498D-B3E7-5BF6940172CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{91A1FDD5-5268-47E5-B1CC-CFB89FD4D476}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A6312E5-43BD-498D-B3E7-5BF6940172CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A6312E5-43BD-498D-B3E7-5BF6940172CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A6312E5-43BD-498D-B3E7-5BF6940172CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A6312E5-43BD-498D-B3E7-5BF6940172CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6A6312E5-43BD-498D-B3E7-5BF6940172CD} = {91A1FDD5-5268-47E5-B1CC-CFB89FD4D476}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8109F17A-77EE-40D6-973D-8E07112B8DB3}
+	EndGlobalSection
+EndGlobal
