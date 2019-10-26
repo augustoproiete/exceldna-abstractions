@@ -11,5 +11,7 @@ namespace ExcelDna.Logging.Abstractions
         void WriteLine(string format, params object[] args);
         void RecordLine(string format, params object[] args);
         void Clear();
+
+        DisplayOrder DisplayOrder { get; set; }
     }
 }

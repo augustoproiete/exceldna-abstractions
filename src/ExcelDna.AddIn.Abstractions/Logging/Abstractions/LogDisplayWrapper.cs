@@ -34,5 +34,11 @@ namespace ExcelDna.Logging.Abstractions
         {
             LogDisplay.Clear();
         }
+
+        public override DisplayOrder DisplayOrder
+        {
+            get => LogDisplay.DisplayOrder;
+            set => LogDisplay.DisplayOrder = value;
+        }
     }
 }

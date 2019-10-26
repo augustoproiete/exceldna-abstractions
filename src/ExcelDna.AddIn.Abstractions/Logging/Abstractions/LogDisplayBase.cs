@@ -34,5 +34,11 @@ namespace ExcelDna.Logging.Abstractions
         {
             throw new NotImplementedException();
         }
+
+        public virtual DisplayOrder DisplayOrder
+        {
+            get => throw new NotImplementedException();
+            set => throw new NotImplementedException();
+        }
     }
 }
