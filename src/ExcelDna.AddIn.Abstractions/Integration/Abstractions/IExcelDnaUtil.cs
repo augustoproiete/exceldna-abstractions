@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ExcelDna.Integration
+namespace ExcelDna.Integration.Abstractions
 {
     public interface IExcelDnaUtil
     {

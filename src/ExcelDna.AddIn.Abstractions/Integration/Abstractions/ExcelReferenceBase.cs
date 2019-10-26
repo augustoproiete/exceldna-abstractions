@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ExcelDna.Integration
+namespace ExcelDna.Integration.Abstractions
 {
     public abstract class ExcelReferenceBase : IExcelReference
     {
+        [Obsolete("An ExcelReference should never be modified.")]
         public virtual void AddReference(int rowFirst, int rowLast, int columnFirst, int columnLast)
         {
             throw new NotImplementedException();

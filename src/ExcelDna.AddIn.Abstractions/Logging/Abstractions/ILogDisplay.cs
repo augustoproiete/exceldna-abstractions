@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ExcelDna.Logging
+namespace ExcelDna.Logging.Abstractions
 {
     public interface ILogDisplay
     {

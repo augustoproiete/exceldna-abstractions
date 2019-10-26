@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace ExcelDna.Integration
+namespace ExcelDna.Integration.Abstractions
 {
     public interface IExcelAsyncUtil
     {

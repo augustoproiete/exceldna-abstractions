@@ -1,4 +1,4 @@
-﻿namespace ExcelDna.ComInterop
+﻿namespace ExcelDna.ComInterop.Abstractions
 {
     public class ComServerWrapper : ComServerBase
     {

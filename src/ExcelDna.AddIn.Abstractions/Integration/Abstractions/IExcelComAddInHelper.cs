@@ -1,4 +1,4 @@
-﻿namespace ExcelDna.Integration.CustomUI
+﻿namespace ExcelDna.Integration.Abstractions
 {
     public interface IExcelComAddInHelper
     {

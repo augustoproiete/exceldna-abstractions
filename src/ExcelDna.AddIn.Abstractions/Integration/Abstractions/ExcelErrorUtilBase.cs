@@ -1,4 +1,4 @@
-﻿namespace ExcelDna.Integration
+﻿namespace ExcelDna.Integration.Abstractions
 {
     public abstract class ExcelErrorUtilBase : IExcelErrorUtil
     {

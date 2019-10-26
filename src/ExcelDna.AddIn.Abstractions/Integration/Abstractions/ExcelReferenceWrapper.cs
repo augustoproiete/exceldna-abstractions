@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ExcelDna.Integration
+namespace ExcelDna.Integration.Abstractions
 {
     public class ExcelReferenceWrapper : ExcelReferenceBase
     {
@@ -43,6 +43,7 @@ namespace ExcelDna.Integration
             excelReference = new ExcelReference(rowFirst, rowLast, columnFirst, columnLast, sheetName);
         }
 
+        [Obsolete("An ExcelReference should never be modified.")]
         public override void AddReference(int rowFirst, int rowLast, int columnFirst, int columnLast)
         {
             excelReference.AddReference(rowFirst, rowLast, columnFirst, columnLast);

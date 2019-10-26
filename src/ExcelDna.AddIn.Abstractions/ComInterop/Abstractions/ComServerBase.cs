@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ExcelDna.ComInterop
+namespace ExcelDna.ComInterop.Abstractions
 {
     public abstract class ComServerBase : IComServer
     {

@@ -38,39 +38,40 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ComInterop\ComServerBase.cs" />
-    <Compile Include="ComInterop\ComServerWrapper.cs" />
-    <Compile Include="ComInterop\IComServer.cs" />
-    <Compile Include="Integration\CustomUI\ExcelComAddInHelperBase.cs" />
-    <Compile Include="Integration\CustomUI\ExcelComAddInHelperWrapper.cs" />
-    <Compile Include="Integration\CustomUI\IExcelComAddInHelper.cs" />
-    <Compile Include="Integration\ExcelAsyncUtilBase.cs" />
-    <Compile Include="Integration\ExcelAsyncUtilWrapper.cs" />
-    <Compile Include="Integration\ExcelDnaUtilBase.cs" />
-    <Compile Include="Integration\ExcelDnaUtilWrapper.cs" />
-    <Compile Include="Integration\ExcelReferenceBase.cs" />
-    <Compile Include="Integration\ExcelReferenceWrapper.cs" />
-    <Compile Include="Integration\IExcelDnaUtil.cs" />
-    <Compile Include="Integration\ExcelErrorUtilBase.cs" />
-    <Compile Include="Integration\ExcelErrorUtilWrapper.cs" />
-    <Compile Include="Integration\ExcelIntegrationBase.cs" />
-    <Compile Include="Integration\ExcelIntegrationWrapper.cs" />
-    <Compile Include="Integration\IExcelAsyncUtil.cs" />
-    <Compile Include="Integration\IExcelErrorUtil.cs" />
-    <Compile Include="Integration\IExcelIntegration.cs" />
-    <Compile Include="Integration\IExcelReference.cs" />
-    <Compile Include="Integration\IXlCall.cs" />
-    <Compile Include="Logging\ILogDisplay.cs" />
-    <Compile Include="Logging\LogDisplayBase.cs" />
-    <Compile Include="Logging\LogDisplayWrapper.cs" />
+    <Compile Include="ComInterop\Abstractions\ComServerBase.cs" />
+    <Compile Include="ComInterop\Abstractions\ComServerWrapper.cs" />
+    <Compile Include="ComInterop\Abstractions\IComServer.cs" />
+    <Compile Include="Integration\Abstractions\ExcelComAddInHelperBase.cs" />
+    <Compile Include="Integration\Abstractions\ExcelComAddInHelperWrapper.cs" />
+    <Compile Include="Integration\Abstractions\IExcelComAddInHelper.cs" />
+    <Compile Include="Integration\Abstractions\ExcelAsyncUtilBase.cs" />
+    <Compile Include="Integration\Abstractions\ExcelAsyncUtilWrapper.cs" />
+    <Compile Include="Integration\Abstractions\ExcelDnaUtilBase.cs" />
+    <Compile Include="Integration\Abstractions\ExcelDnaUtilWrapper.cs" />
+    <Compile Include="Integration\Abstractions\ExcelReferenceBase.cs" />
+    <Compile Include="Integration\Abstractions\ExcelReferenceWrapper.cs" />
+    <Compile Include="Integration\Abstractions\IExcelDnaUtil.cs" />
+    <Compile Include="Integration\Abstractions\ExcelErrorUtilBase.cs" />
+    <Compile Include="Integration\Abstractions\ExcelErrorUtilWrapper.cs" />
+    <Compile Include="Integration\Abstractions\ExcelIntegrationBase.cs" />
+    <Compile Include="Integration\Abstractions\ExcelIntegrationWrapper.cs" />
+    <Compile Include="Integration\Abstractions\IExcelAsyncUtil.cs" />
+    <Compile Include="Integration\Abstractions\IExcelErrorUtil.cs" />
+    <Compile Include="Integration\Abstractions\IExcelIntegration.cs" />
+    <Compile Include="Integration\Abstractions\IExcelReference.cs" />
+    <Compile Include="Integration\Abstractions\IXlCall.cs" />
+    <Compile Include="Logging\Abstractions\ILogDisplay.cs" />
+    <Compile Include="Logging\Abstractions\LogDisplayBase.cs" />
+    <Compile Include="Logging\Abstractions\LogDisplayWrapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Integration\XlCallBase.cs" />
-    <Compile Include="Integration\XlCallWrapper.cs" />
+    <Compile Include="Integration\Abstractions\XlCallBase.cs" />
+    <Compile Include="Integration\Abstractions\XlCallWrapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ExcelDna.AddIn.Abstractions.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>

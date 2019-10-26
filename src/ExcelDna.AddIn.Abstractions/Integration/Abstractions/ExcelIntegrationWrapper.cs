@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Reflection;
 
-namespace ExcelDna.Integration
+namespace ExcelDna.Integration.Abstractions
 {
     public class ExcelIntegrationWrapper : ExcelIntegrationBase
     {
