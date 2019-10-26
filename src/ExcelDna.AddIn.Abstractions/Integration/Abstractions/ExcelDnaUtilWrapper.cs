@@ -16,5 +16,7 @@ namespace ExcelDna.Integration.Abstractions
         public override double ExcelVersion => ExcelDnaUtil.ExcelVersion;
 
         public override ExcelLimits ExcelLimits => ExcelDnaUtil.ExcelLimits;
+
+        public override string XllPath => ExcelDnaUtil.XllPath;
     }
 }

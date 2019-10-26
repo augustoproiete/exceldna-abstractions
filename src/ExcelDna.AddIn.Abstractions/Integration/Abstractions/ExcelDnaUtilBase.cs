@@ -16,5 +16,7 @@ namespace ExcelDna.Integration.Abstractions
         public virtual double ExcelVersion => throw new NotImplementedException();
 
         public virtual ExcelLimits ExcelLimits => throw new NotImplementedException();
+
+        public virtual string XllPath => throw new NotImplementedException();
     }
 }

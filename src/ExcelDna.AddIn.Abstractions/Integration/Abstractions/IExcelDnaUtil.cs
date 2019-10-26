@@ -9,5 +9,6 @@ namespace ExcelDna.Integration.Abstractions
         object Application { get; }
         double ExcelVersion { get; }
         ExcelLimits ExcelLimits { get; }
+        string XllPath { get; }
     }
 }
