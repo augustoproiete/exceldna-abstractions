@@ -9,24 +9,12 @@ namespace ExcelDna.Integration.Abstractions
             return ExcelDnaUtil.IsInFunctionWizard();
         }
 
-        public override IntPtr WindowHandle
-        {
-            get { return ExcelDnaUtil.WindowHandle; }
-        }
+        public override IntPtr WindowHandle => ExcelDnaUtil.WindowHandle;
 
-        public override object Application
-        {
-            get { return ExcelDnaUtil.Application; }
-        }
+        public override object Application => ExcelDnaUtil.Application;
 
-        public override double ExcelVersion
-        {
-            get { return ExcelDnaUtil.ExcelVersion; }
-        }
+        public override double ExcelVersion => ExcelDnaUtil.ExcelVersion;
 
-        public override ExcelLimits ExcelLimits
-        {
-            get { return ExcelDnaUtil.ExcelLimits; }
-        }
+        public override ExcelLimits ExcelLimits => ExcelDnaUtil.ExcelLimits;
     }
 }

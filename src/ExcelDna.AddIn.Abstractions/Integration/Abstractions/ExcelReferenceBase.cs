@@ -21,34 +21,16 @@ namespace ExcelDna.Integration.Abstractions
             throw new NotImplementedException();
         }
 
-        public virtual int RowFirst
-        {
-            get { throw new NotImplementedException(); }
-        }
+        public virtual int RowFirst => throw new NotImplementedException();
 
-        public virtual int RowLast
-        {
-            get { throw new NotImplementedException(); }
-        }
+        public virtual int RowLast => throw new NotImplementedException();
 
-        public virtual int ColumnFirst
-        {
-            get { throw new NotImplementedException(); }
-        }
+        public virtual int ColumnFirst => throw new NotImplementedException();
 
-        public virtual int ColumnLast
-        {
-            get { throw new NotImplementedException(); }
-        }
+        public virtual int ColumnLast => throw new NotImplementedException();
 
-        public virtual IntPtr SheetId
-        {
-            get { throw new NotImplementedException(); }
-        }
+        public virtual IntPtr SheetId => throw new NotImplementedException();
 
-        public virtual List<IExcelReference> InnerReferences
-        {
-            get { throw new NotImplementedException(); }
-        }
+        public virtual List<IExcelReference> InnerReferences => throw new NotImplementedException();
     }
 }

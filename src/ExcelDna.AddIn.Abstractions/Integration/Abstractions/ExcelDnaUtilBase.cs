@@ -9,24 +9,12 @@ namespace ExcelDna.Integration.Abstractions
             throw new NotImplementedException();
         }
 
-        public virtual IntPtr WindowHandle
-        {
-            get { throw new NotImplementedException(); }
-        }
-        
-        public virtual object Application
-        {
-            get { throw new NotImplementedException(); }
-        }
-        
-        public virtual double ExcelVersion
-        {
-            get { throw new NotImplementedException(); }
-        }
-        
-        public virtual ExcelLimits ExcelLimits
-        {
-            get { throw new NotImplementedException(); }
-        }
+        public virtual IntPtr WindowHandle => throw new NotImplementedException();
+
+        public virtual object Application => throw new NotImplementedException();
+
+        public virtual double ExcelVersion => throw new NotImplementedException();
+
+        public virtual ExcelLimits ExcelLimits => throw new NotImplementedException();
     }
 }
