@@ -6,7 +6,7 @@
     <title>ExcelDna.AddIn.Abstractions</title>
     <authors>Caio Proiete</authors>
     <owners>Caio Proiete</owners>
-    <licenseUrl>http://choosealicense.com/licenses/apache/</licenseUrl>
+    <licenseUrl>http://choosealicense.com/licenses/mit/</licenseUrl>
     <projectUrl>https://github.com/caioproiete/exceldna-addin-abstractions</projectUrl>
     <iconUrl>http://caioproiete.github.io/exceldna-addin-abstractions/images/nuget-icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
