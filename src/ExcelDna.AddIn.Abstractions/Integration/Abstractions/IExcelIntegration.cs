@@ -11,6 +11,8 @@ namespace ExcelDna.Integration.Abstractions
         object GetRegistrationInfo(string xllPath, double registrationUpdateVersion);
 
         void RegisterMethods(List<MethodInfo> methods);
+        void RegisterMethods(List<MethodInfo> methods, List<object> methodAttributes, List<List<object>> argumentAttributes);
+
         void RegisterDelegates(List<Delegate> delegates, List<object> methodAttributes, List<List<object>> argumentAttributes);
 
         // ReSharper disable InconsistentNaming

@@ -21,6 +21,11 @@ namespace ExcelDna.Integration.Abstractions
             ExcelIntegration.RegisterMethods(methods);
         }
 
+        public override void RegisterMethods(List<MethodInfo> methods, List<object> methodAttributes, List<List<object>> argumentAttributes)
+        {
+            ExcelIntegration.RegisterMethods(methods, methodAttributes, argumentAttributes);
+        }
+
         public override void RegisterDelegates(List<Delegate> delegates, List<object> methodAttributes, List<List<object>> argumentAttributes)
         {
             ExcelIntegration.RegisterDelegates(delegates, methodAttributes, argumentAttributes);
