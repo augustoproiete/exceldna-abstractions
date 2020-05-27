@@ -8,6 +8,8 @@ namespace ExcelDna.Integration.Abstractions
         IEnumerable<Assembly> GetExportedAssemblies();
 
         void RegisterMethods(List<MethodInfo> methods);
+
         void RegisterUnhandledExceptionHandler(UnhandledExceptionHandler exceptionHandler);
+        UnhandledExceptionHandler GetRegisterUnhandledExceptionHandler();
     }
 }

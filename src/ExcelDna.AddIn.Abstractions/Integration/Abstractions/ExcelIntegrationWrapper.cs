@@ -19,5 +19,10 @@ namespace ExcelDna.Integration.Abstractions
         {
             ExcelIntegration.RegisterUnhandledExceptionHandler(exceptionHandler);
         }
+
+        public override UnhandledExceptionHandler GetRegisterUnhandledExceptionHandler()
+        {
+            return ExcelIntegration.GetRegisterUnhandledExceptionHandler();
+        }
     }
 }

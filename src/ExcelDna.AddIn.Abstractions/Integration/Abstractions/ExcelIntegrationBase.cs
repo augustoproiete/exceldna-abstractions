@@ -20,5 +20,10 @@ namespace ExcelDna.Integration.Abstractions
         {
             throw new NotImplementedException();
         }
+
+        public virtual UnhandledExceptionHandler GetRegisterUnhandledExceptionHandler()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
