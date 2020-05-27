@@ -37,8 +37,8 @@ namespace ExcelDna.Logging.Abstractions
 
         public override DisplayOrder DisplayOrder
         {
-            get => LogDisplay.DisplayOrder;
-            set => LogDisplay.DisplayOrder = value;
+            get => (DisplayOrder)LogDisplay.DisplayOrder;
+            set => LogDisplay.DisplayOrder = (Logging.DisplayOrder)value;
         }
     }
 }
