@@ -21,6 +21,11 @@ namespace ExcelDna.Integration.Abstractions
             throw new NotImplementedException();
         }
 
+        public virtual void RegisterDelegates(List<Delegate> delegates, List<object> methodAttributes, List<List<object>> argumentAttributes)
+        {
+            throw new NotImplementedException();
+        }
+
         public virtual void RegisterUnhandledExceptionHandler(UnhandledExceptionHandler exceptionHandler)
         {
             throw new NotImplementedException();

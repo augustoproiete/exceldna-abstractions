@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Reflection;
 
 namespace ExcelDna.Integration.Abstractions
@@ -18,6 +19,11 @@ namespace ExcelDna.Integration.Abstractions
         public override void RegisterMethods(List<MethodInfo> methods)
         {
             ExcelIntegration.RegisterMethods(methods);
+        }
+
+        public override void RegisterDelegates(List<Delegate> delegates, List<object> methodAttributes, List<List<object>> argumentAttributes)
+        {
+            ExcelIntegration.RegisterDelegates(delegates, methodAttributes, argumentAttributes);
         }
 
         public override void RegisterUnhandledExceptionHandler(UnhandledExceptionHandler exceptionHandler)
