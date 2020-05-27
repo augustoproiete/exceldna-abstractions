@@ -5,6 +5,11 @@ namespace ExcelDna.Integration.Abstractions
 {
     public class ExcelIntegrationWrapper : ExcelIntegrationBase
     {
+        public override IEnumerable<Assembly> GetExportedAssemblies()
+        {
+            return ExcelIntegration.GetExportedAssemblies();
+        }
+
         public override void RegisterMethods(List<MethodInfo> methods)
         {
             ExcelIntegration.RegisterMethods(methods);

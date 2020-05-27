@@ -6,6 +6,11 @@ namespace ExcelDna.Integration.Abstractions
 {
     public abstract class ExcelIntegrationBase : IExcelIntegration
     {
+        public virtual IEnumerable<Assembly> GetExportedAssemblies()
+        {
+            throw new NotImplementedException();
+        }
+
         public virtual void RegisterMethods(List<MethodInfo> methods)
         {
             throw new NotImplementedException();
