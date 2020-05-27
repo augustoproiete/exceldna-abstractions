@@ -59,6 +59,9 @@
     <Compile Include="Integration\Abstractions\IExcelErrorUtil.cs" />
     <Compile Include="Integration\Abstractions\IExcelIntegration.cs" />
     <Compile Include="Integration\Abstractions\IXlCall.cs" />
+    <Compile Include="Integration\CustomUI\Abstractions\CustomTaskPaneFactoryBase.cs" />
+    <Compile Include="Integration\CustomUI\Abstractions\CustomTaskPaneFactoryWrapper.cs" />
+    <Compile Include="Integration\CustomUI\Abstractions\ICustomTaskPaneFactory.cs" />
     <Compile Include="Logging\Abstractions\ILogDisplay.cs" />
     <Compile Include="Logging\Abstractions\LogDisplayBase.cs" />
     <Compile Include="Logging\Abstractions\DisplayOrder.cs" />
