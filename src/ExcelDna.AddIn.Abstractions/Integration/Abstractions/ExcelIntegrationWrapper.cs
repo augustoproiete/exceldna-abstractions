@@ -31,6 +31,11 @@ namespace ExcelDna.Integration.Abstractions
             return ExcelIntegration.RegisterXLL(xllPath);
         }
 
+        public override void UnregisterXLL(string xllPath)
+        {
+            ExcelIntegration.UnregisterXLL(xllPath);
+        }
+
         public override void RegisterUnhandledExceptionHandler(UnhandledExceptionHandler exceptionHandler)
         {
             ExcelIntegration.RegisterUnhandledExceptionHandler(exceptionHandler);

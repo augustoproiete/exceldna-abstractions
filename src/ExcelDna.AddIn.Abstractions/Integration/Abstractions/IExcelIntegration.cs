@@ -15,6 +15,7 @@ namespace ExcelDna.Integration.Abstractions
 
         // ReSharper disable InconsistentNaming
         object RegisterXLL(string xllPath);
+        void UnregisterXLL(string xllPath);
         // ReSharper restore InconsistentNaming
 
         void RegisterUnhandledExceptionHandler(UnhandledExceptionHandler exceptionHandler);

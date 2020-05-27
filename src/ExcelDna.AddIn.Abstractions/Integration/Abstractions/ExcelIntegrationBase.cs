@@ -33,6 +33,13 @@ namespace ExcelDna.Integration.Abstractions
             throw new NotImplementedException();
         }
 
+        // ReSharper disable InconsistentNaming
+        public virtual void UnregisterXLL(string xllPath)
+        // ReSharper restore InconsistentNaming
+        {
+            throw new NotImplementedException();
+        }
+
         public virtual void RegisterUnhandledExceptionHandler(UnhandledExceptionHandler exceptionHandler)
         {
             throw new NotImplementedException();
