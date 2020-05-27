@@ -61,7 +61,10 @@
     <Compile Include="Integration\Abstractions\IXlCall.cs" />
     <Compile Include="Integration\CustomUI\Abstractions\CustomTaskPaneFactoryBase.cs" />
     <Compile Include="Integration\CustomUI\Abstractions\CustomTaskPaneFactoryWrapper.cs" />
+    <Compile Include="Integration\CustomUI\Abstractions\ExcelCommandBarUtilBase.cs" />
+    <Compile Include="Integration\CustomUI\Abstractions\ExcelCommandBarUtilWrapper.cs" />
     <Compile Include="Integration\CustomUI\Abstractions\ICustomTaskPaneFactory.cs" />
+    <Compile Include="Integration\CustomUI\Abstractions\IExcelCommandBarUtil.cs" />
     <Compile Include="Logging\Abstractions\ILogDisplay.cs" />
     <Compile Include="Logging\Abstractions\LogDisplayBase.cs" />
     <Compile Include="Logging\Abstractions\DisplayOrder.cs" />
