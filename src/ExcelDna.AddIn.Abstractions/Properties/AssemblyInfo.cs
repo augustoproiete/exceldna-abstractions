@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("ExcelDna.AddIn.Abstractions")]
-[assembly: AssemblyCopyright("Copyright © 2013 Caio Proiete")]
+[assembly: AssemblyCopyright("Copyright 2013-2020 C. Augusto Proiete & Contributors")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
