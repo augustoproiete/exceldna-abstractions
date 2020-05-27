@@ -13,6 +13,10 @@ namespace ExcelDna.Integration.Abstractions
         void RegisterMethods(List<MethodInfo> methods);
         void RegisterDelegates(List<Delegate> delegates, List<object> methodAttributes, List<List<object>> argumentAttributes);
 
+        // ReSharper disable InconsistentNaming
+        object RegisterXLL(string xllPath);
+        // ReSharper restore InconsistentNaming
+
         void RegisterUnhandledExceptionHandler(UnhandledExceptionHandler exceptionHandler);
         UnhandledExceptionHandler GetRegisterUnhandledExceptionHandler();
     }
