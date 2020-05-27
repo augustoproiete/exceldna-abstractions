@@ -12,6 +12,8 @@ namespace ExcelDna.Integration.Abstractions
         void Uninitialize();
 
         object Observe(string callerFunctionName, object callerParameters, ExcelObservableSource observableSource);
+        object Observe(string callerFunctionName, object callerParameters, ExcelObservableOptions options, ExcelObservableSource observableSource);
+
         object Run(string callerFunctionName, object callerParameters, ExcelFunc asyncFunc);
         void QueueMacro(string macroName);
         void QueueAsMacro(ExcelAction action);

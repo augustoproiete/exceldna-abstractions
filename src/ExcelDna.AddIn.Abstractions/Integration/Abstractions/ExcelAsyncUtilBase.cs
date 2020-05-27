@@ -22,6 +22,11 @@ namespace ExcelDna.Integration.Abstractions
             throw new NotImplementedException();
         }
 
+        public virtual object Observe(string callerFunctionName, object callerParameters, ExcelObservableOptions options, ExcelObservableSource observableSource)
+        {
+            throw new NotImplementedException();
+        }
+
         public virtual object Run(string callerFunctionName, object callerParameters, ExcelFunc asyncFunc)
         {
             throw new NotImplementedException();

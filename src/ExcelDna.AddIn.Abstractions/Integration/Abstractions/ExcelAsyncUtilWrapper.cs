@@ -22,6 +22,11 @@ namespace ExcelDna.Integration.Abstractions
             return ExcelAsyncUtil.Observe(callerFunctionName, callerParameters, observableSource);
         }
 
+        public override object Observe(string callerFunctionName, object callerParameters, ExcelObservableOptions options, ExcelObservableSource observableSource)
+        {
+            return ExcelAsyncUtil.Observe(callerFunctionName, callerParameters, options, observableSource);
+        }
+
         public override object Run(string callerFunctionName, object callerParameters, ExcelFunc asyncFunc)
         {
             return ExcelAsyncUtil.Run(callerFunctionName, callerParameters, asyncFunc);
