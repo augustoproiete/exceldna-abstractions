@@ -10,6 +10,11 @@ namespace ExcelDna.Integration.Abstractions
             return ExcelIntegration.GetExportedAssemblies();
         }
 
+        public override object GetRegistrationInfo(string xllPath, double registrationUpdateVersion)
+        {
+            return ExcelIntegration.GetRegistrationInfo(xllPath, registrationUpdateVersion);
+        }
+
         public override void RegisterMethods(List<MethodInfo> methods)
         {
             ExcelIntegration.RegisterMethods(methods);

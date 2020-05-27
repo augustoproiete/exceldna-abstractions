@@ -7,6 +7,8 @@ namespace ExcelDna.Integration.Abstractions
     {
         IEnumerable<Assembly> GetExportedAssemblies();
 
+        object GetRegistrationInfo(string xllPath, double registrationUpdateVersion);
+
         void RegisterMethods(List<MethodInfo> methods);
 
         void RegisterUnhandledExceptionHandler(UnhandledExceptionHandler exceptionHandler);

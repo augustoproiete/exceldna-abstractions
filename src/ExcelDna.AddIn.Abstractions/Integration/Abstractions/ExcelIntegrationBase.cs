@@ -11,6 +11,11 @@ namespace ExcelDna.Integration.Abstractions
             throw new NotImplementedException();
         }
 
+        public virtual object GetRegistrationInfo(string xllPath, double registrationUpdateVersion)
+        {
+            throw new NotImplementedException();
+        }
+
         public virtual void RegisterMethods(List<MethodInfo> methods)
         {
             throw new NotImplementedException();
