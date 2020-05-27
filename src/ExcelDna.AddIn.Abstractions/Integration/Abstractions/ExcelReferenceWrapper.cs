@@ -15,7 +15,7 @@ namespace ExcelDna.Integration.Abstractions
                 throw new ArgumentNullException(nameof(excelReference));
             }
 
-            this._excelReference = new ExcelReference(
+            _excelReference = new ExcelReference(
                 excelReference.RowFirst,
                 excelReference.RowLast,
                 excelReference.ColumnFirst,
@@ -69,14 +69,41 @@ namespace ExcelDna.Integration.Abstractions
 
         public override IntPtr SheetId => _excelReference.SheetId;
 
-        public override List<IExcelReference> InnerReferences
+        public override List<ExcelReferenceBase> InnerReferences
         {
             get
             {
                 return _excelReference.InnerReferences
-                    .Select(r => (IExcelReference)new ExcelReferenceWrapper(r))
+                    .Select(r => (ExcelReferenceBase)new ExcelReferenceWrapper(r))
                     .ToList();
             }
         }
+
+        public override bool Equals(object obj)
+        {
+            return Equals(obj as ExcelReferenceBase) || _excelReference.Equals(obj as ExcelReference);
+        }
+
+        public override bool Equals(ExcelReferenceBase other)
+        {
+            if (other is null)
+            {
+                return false;
+            }
+
+            return _excelReference.Equals(other.ExcelReferenceBaseInstance);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
+        public override string ToString()
+        {
+            return _excelReference.ToString();
+        }
+
+        internal override ExcelReference ExcelReferenceBaseInstance => _excelReference;
     }
 }

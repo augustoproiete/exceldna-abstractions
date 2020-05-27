@@ -58,7 +58,6 @@
     <Compile Include="Integration\Abstractions\IExcelAsyncUtil.cs" />
     <Compile Include="Integration\Abstractions\IExcelErrorUtil.cs" />
     <Compile Include="Integration\Abstractions\IExcelIntegration.cs" />
-    <Compile Include="Integration\Abstractions\IExcelReference.cs" />
     <Compile Include="Integration\Abstractions\IXlCall.cs" />
     <Compile Include="Logging\Abstractions\ILogDisplay.cs" />
     <Compile Include="Logging\Abstractions\LogDisplayBase.cs" />
