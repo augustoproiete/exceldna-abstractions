@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata minClientVersion="3.3">
     <id>ExcelDna.AddIn.Abstractions</id>
     <version>0.0.1-local</version>
@@ -7,6 +7,7 @@
     <authors>C. Augusto Proiete</authors>
     <owners>augustoproiete</owners>
     <license type="file">LICENSE</license>
+    <repository type="git" url="https://github.com/augustoproiete/exceldna-addin-abstractions" />
     <projectUrl>https://github.com/augustoproiete/exceldna-addin-abstractions</projectUrl>
     <icon>images\icon.png</icon>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -14,7 +15,8 @@
     <summary>Wrapper for Excel-DNA classes for unit testing of Excel Add-Ins.</summary>
     <releaseNotes>https://github.com/augustoproiete/exceldna-addin-abstractions/releases/tag/v$version$</releaseNotes>
     <copyright>Copyright (c) C. Augusto Proiete 2016-2020 &amp; Contributors</copyright>
-    <tags>mock mockobjects tdd unit-testing excel-dna excel</tags>
+    <language>en-US</language>
+    <tags>mock mockobjects tdd unit-testing excel-dna exceldna excel</tags>
     <dependencies>
       <dependency id="ExcelDna.Integration" version="1.0.0" />
       <dependency id="ExcelDna.Registration" version="1.0.0" />
