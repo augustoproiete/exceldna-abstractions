@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-  <metadata>
+  <metadata minClientVersion="3.3">
     <id>ExcelDna.AddIn.Abstractions</id>
     <version>0.0.1-local</version>
     <title>ExcelDna.AddIn.Abstractions</title>
     <authors>C. Augusto Proiete</authors>
     <owners>augustoproiete</owners>
-    <licenseUrl>http://choosealicense.com/licenses/mit/</licenseUrl>
+    <license type="file">LICENSE</license>
     <projectUrl>https://github.com/augustoproiete/exceldna-addin-abstractions</projectUrl>
     <iconUrl>http://augustoproiete.github.io/exceldna-addin-abstractions/images/nuget-icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -23,5 +23,6 @@
   <files>
     <file src="bin\$Configuration$\ExcelDna.AddIn.Abstractions.dll" target="lib\net40\ExcelDna.AddIn.Abstractions.dll" />
     <file src="bin\$Configuration$\ExcelDna.AddIn.Abstractions.pdb" target="lib\net40\ExcelDna.AddIn.Abstractions.pdb" />
+    <file src="..\..\LICENSE" target="\LICENSE" />
   </files>
 </package>
