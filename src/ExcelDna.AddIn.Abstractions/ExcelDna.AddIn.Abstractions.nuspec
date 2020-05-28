@@ -17,7 +17,7 @@
     <tags>mock mockobjects tdd unit-testing excel-dna excel</tags>
     <dependencies>
       <dependency id="ExcelDna.Integration" version="1.0.0" />
-      <dependency id="ExcelDna.Registration" version="0.34.7" />
+      <dependency id="ExcelDna.Registration" version="1.0.0" />
     </dependencies>
   </metadata>
   <files>

@@ -35,8 +35,8 @@
       <HintPath>..\..\packages\ExcelDna.Integration.1.0.0\lib\ExcelDna.Integration.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="ExcelDna.Registration, Version=0.34.6455.41786, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\ExcelDna.Registration.0.34.7\lib\net40\ExcelDna.Registration.dll</HintPath>
+    <Reference Include="ExcelDna.Registration, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\ExcelDna.Registration.1.0.0\lib\net40\ExcelDna.Registration.dll</HintPath>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>
