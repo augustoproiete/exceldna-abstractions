@@ -75,12 +75,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Integration\Abstractions\XlCallBase.cs" />
     <Compile Include="Integration\Abstractions\XlCallWrapper.cs" />
+    <Compile Include="Registration\Abstractions\AsyncRegistrationBase.cs" />
+    <Compile Include="Registration\Abstractions\AsyncRegistrationWrapper.cs" />
     <Compile Include="Registration\Abstractions\ExcelCommandRegistrationBase.cs" />
     <Compile Include="Registration\Abstractions\ExcelCommandRegistrationWrapper.cs" />
     <Compile Include="Registration\Abstractions\ExcelFunctionRegistrationBase.cs" />
     <Compile Include="Registration\Abstractions\ExcelFunctionRegistrationWrapper.cs" />
     <Compile Include="Registration\Abstractions\ExcelRegistrationBase.cs" />
     <Compile Include="Registration\Abstractions\ExcelRegistrationWrapper.cs" />
+    <Compile Include="Registration\Abstractions\IAsyncRegistration.cs" />
     <Compile Include="Registration\Abstractions\IExcelRegistration.cs" />
   </ItemGroup>
   <ItemGroup>
