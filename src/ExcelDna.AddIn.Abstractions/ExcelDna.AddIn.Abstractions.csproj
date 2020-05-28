@@ -85,6 +85,9 @@
     <Compile Include="Registration\Abstractions\ExcelRegistrationWrapper.cs" />
     <Compile Include="Registration\Abstractions\IAsyncRegistration.cs" />
     <Compile Include="Registration\Abstractions\IExcelRegistration.cs" />
+    <Compile Include="Registration\Abstractions\ITypeConversion.cs" />
+    <Compile Include="Registration\Abstractions\TypeConversionBase.cs" />
+    <Compile Include="Registration\Abstractions\TypeConversionWrapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ExcelDna.AddIn.Abstractions.nuspec" />
