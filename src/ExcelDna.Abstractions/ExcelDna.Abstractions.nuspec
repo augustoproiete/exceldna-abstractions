@@ -10,6 +10,7 @@
     <repository type="git" url="https://github.com/augustoproiete/exceldna-abstractions" />
     <projectUrl>https://github.com/augustoproiete/exceldna-abstractions</projectUrl>
     <icon>images\icon.png</icon>
+    <iconUrl>https://raw.githubusercontent.com/augustoproiete/exceldna-abstractions/master/assets/exceldna-abstractions-nuget.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>ExcelDna.Abstractions is a library that abstracts Excel-DNA classes such as `ExcelDnaUtil`, `ExcelAsyncUtil`, and many other classes so you can easily mock them and write unit tests against your Excel Add-Ins built with Excel-DNA.</description>
     <summary>Abstractions for Excel-DNA classes for unit testing of Excel Add-Ins.</summary>
