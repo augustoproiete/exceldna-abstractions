@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ExcelDna</RootNamespace>
-    <AssemblyName>ExcelDna.AddIn.Abstractions</AssemblyName>
+    <AssemblyName>ExcelDna.Abstractions</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -90,7 +90,7 @@
     <Compile Include="Registration\Abstractions\TypeConversionWrapper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ExcelDna.AddIn.Abstractions.nuspec" />
+    <None Include="ExcelDna.Abstractions.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />

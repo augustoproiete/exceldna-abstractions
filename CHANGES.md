@@ -1,1 +1,1 @@
-See: https://github.com/augustoproiete/exceldna-addin-abstractions/releases
+See: https://github.com/augustoproiete/exceldna-abstractions/releases
