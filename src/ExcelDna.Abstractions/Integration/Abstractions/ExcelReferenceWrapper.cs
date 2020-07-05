@@ -43,6 +43,16 @@ namespace ExcelDna.Integration.Abstractions
             _excelReference = new ExcelReference(rowFirst, rowLast, columnFirst, columnLast, sheetName);
         }
 
+        public ExcelReferenceWrapper(int[][] rectangles, IntPtr sheetId)
+        {
+            _excelReference = new ExcelReference(rectangles, sheetId);
+        }
+
+        public ExcelReferenceWrapper(IEnumerable<ExcelReference> references)
+        {
+            _excelReference = new ExcelReference(references);
+        }
+
         [Obsolete("An ExcelReference should never be modified.")]
         public override void AddReference(int rowFirst, int rowLast, int columnFirst, int columnLast)
         {
