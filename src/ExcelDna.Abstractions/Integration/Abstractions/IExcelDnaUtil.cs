@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace ExcelDna.Integration.Abstractions
 {
@@ -11,5 +12,6 @@ namespace ExcelDna.Integration.Abstractions
         double ExcelVersion { get; }
         ExcelLimits ExcelLimits { get; }
         string XllPath { get; }
+        FileInfo XllPathInfo { get; }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace ExcelDna.Integration.Abstractions
 {
@@ -20,5 +21,7 @@ namespace ExcelDna.Integration.Abstractions
         public override ExcelLimits ExcelLimits => ExcelDnaUtil.ExcelLimits;
 
         public override string XllPath => ExcelDnaUtil.XllPath;
+
+        public override FileInfo XllPathInfo => ExcelDnaUtil.XllPathInfo;
     }
 }

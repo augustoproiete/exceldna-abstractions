@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace ExcelDna.Integration.Abstractions
 {
@@ -20,5 +21,7 @@ namespace ExcelDna.Integration.Abstractions
         public virtual ExcelLimits ExcelLimits => throw new NotImplementedException();
 
         public virtual string XllPath => throw new NotImplementedException();
+
+        public virtual FileInfo XllPathInfo => throw new NotImplementedException();
     }
 }
