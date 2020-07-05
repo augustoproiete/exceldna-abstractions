@@ -13,5 +13,6 @@ namespace ExcelDna.Integration.Abstractions
         ExcelLimits ExcelLimits { get; }
         string XllPath { get; }
         FileInfo XllPathInfo { get; }
+        bool SupportsDynamicArrays { get; }
     }
 }

@@ -23,5 +23,7 @@ namespace ExcelDna.Integration.Abstractions
         public virtual string XllPath => throw new NotImplementedException();
 
         public virtual FileInfo XllPathInfo => throw new NotImplementedException();
+
+        public virtual bool SupportsDynamicArrays => throw new NotImplementedException();
     }
 }

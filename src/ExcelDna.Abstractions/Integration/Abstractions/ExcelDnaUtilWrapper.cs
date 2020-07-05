@@ -23,5 +23,7 @@ namespace ExcelDna.Integration.Abstractions
         public override string XllPath => ExcelDnaUtil.XllPath;
 
         public override FileInfo XllPathInfo => ExcelDnaUtil.XllPathInfo;
+
+        public override bool SupportsDynamicArrays => ExcelDnaUtil.SupportsDynamicArrays;
     }
 }
