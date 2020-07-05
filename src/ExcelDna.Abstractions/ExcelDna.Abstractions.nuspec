@@ -15,12 +15,12 @@
     <description>ExcelDna.Abstractions is a library that abstracts Excel-DNA classes such as `ExcelDnaUtil`, `ExcelAsyncUtil`, and many other classes so you can easily mock them and write unit tests against your Excel Add-Ins built with Excel-DNA.</description>
     <summary>Abstractions for Excel-DNA classes for unit testing of Excel Add-Ins.</summary>
     <releaseNotes>https://github.com/augustoproiete/exceldna-abstractions/releases/tag/v$version$</releaseNotes>
-    <copyright>Copyright (c) C. Augusto Proiete 2016-2020 &amp; Contributors</copyright>
+    <copyright>Copyright C. Augusto Proiete 2016-2020 &amp; Contributors</copyright>
     <language>en-US</language>
     <tags>mock mockobjects tdd unit-testing excel-dna exceldna excel</tags>
     <dependencies>
-      <dependency id="ExcelDna.Integration" version="1.0.0" />
-      <dependency id="ExcelDna.Registration" version="1.0.0" />
+      <dependency id="ExcelDna.Integration" version="1.1.0" />
+      <dependency id="ExcelDna.Registration" version="1.1.0" />
     </dependencies>
   </metadata>
   <files>
