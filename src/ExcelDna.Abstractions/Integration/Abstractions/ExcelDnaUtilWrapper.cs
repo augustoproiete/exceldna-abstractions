@@ -9,6 +9,8 @@ namespace ExcelDna.Integration.Abstractions
             return ExcelDnaUtil.IsInFunctionWizard();
         }
 
+        public override int MainManagedThreadId => ExcelDnaUtil.MainManagedThreadId;
+
         public override IntPtr WindowHandle => ExcelDnaUtil.WindowHandle;
 
         public override object Application => ExcelDnaUtil.Application;

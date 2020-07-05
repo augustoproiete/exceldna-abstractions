@@ -9,6 +9,8 @@ namespace ExcelDna.Integration.Abstractions
             throw new NotImplementedException();
         }
 
+        public virtual int MainManagedThreadId => throw new NotImplementedException();
+
         public virtual IntPtr WindowHandle => throw new NotImplementedException();
 
         public virtual object Application => throw new NotImplementedException();
