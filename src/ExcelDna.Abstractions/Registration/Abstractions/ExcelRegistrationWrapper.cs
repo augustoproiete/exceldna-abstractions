@@ -5,6 +5,8 @@ namespace ExcelDna.Registration.Abstractions
 {
     public class ExcelRegistrationWrapper : ExcelRegistrationBase
     {
+        public static readonly IExcelRegistration Instance = new ExcelRegistrationWrapper();
+
         public override IEnumerable<ExcelFunctionRegistrationBase> GetExcelFunctions()
         {
             return ExcelRegistration.GetExcelFunctions()

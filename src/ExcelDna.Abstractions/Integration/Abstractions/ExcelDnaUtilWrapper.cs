@@ -5,6 +5,8 @@ namespace ExcelDna.Integration.Abstractions
 {
     public class ExcelDnaUtilWrapper : ExcelDnaUtilBase
     {
+        public static readonly IExcelDnaUtil Instance = new ExcelDnaUtilWrapper();
+
         public override bool IsInFunctionWizard()
         {
             return ExcelDnaUtil.IsInFunctionWizard();

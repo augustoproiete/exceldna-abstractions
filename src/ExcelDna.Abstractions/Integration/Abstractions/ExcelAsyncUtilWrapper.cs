@@ -5,6 +5,8 @@ namespace ExcelDna.Integration.Abstractions
 {
     public class ExcelAsyncUtilWrapper : ExcelAsyncUtilBase
     {
+        public static readonly IExcelAsyncUtil Instance = new ExcelAsyncUtilWrapper();
+
         [Obsolete("ExcelAsyncUtilWrapper.Initialize is no longer required. The call can be removed.")]
         public override void Initialize()
         {

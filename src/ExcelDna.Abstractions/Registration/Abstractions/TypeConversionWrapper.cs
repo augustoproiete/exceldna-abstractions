@@ -5,6 +5,8 @@ namespace ExcelDna.Registration.Abstractions
 {
     public class TypeConversionWrapper : TypeConversionBase
     {
+        public static readonly ITypeConversion Instance = new TypeConversionWrapper();
+
         public override LambdaExpression GetConversion(Type inputType, Type targetType)
         {
             return TypeConversion.GetConversion(inputType, targetType);

@@ -4,6 +4,8 @@ namespace ExcelDna.Logging.Abstractions
 {
     public class LogDisplayWrapper : LogDisplayBase
     {
+        public static readonly ILogDisplay Instance = new LogDisplayWrapper();
+
         public override void Show()
         {
             LogDisplay.Show();

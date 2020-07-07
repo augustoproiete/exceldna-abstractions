@@ -6,6 +6,8 @@ namespace ExcelDna.Integration.Abstractions
 {
     public class ExcelIntegrationWrapper : ExcelIntegrationBase
     {
+        public static readonly IExcelIntegration Instance = new ExcelIntegrationWrapper();
+
         public override IEnumerable<Assembly> GetExportedAssemblies()
         {
             return ExcelIntegration.GetExportedAssemblies();

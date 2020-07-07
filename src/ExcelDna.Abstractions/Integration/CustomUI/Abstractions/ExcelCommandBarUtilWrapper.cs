@@ -2,6 +2,8 @@
 {
     public class ExcelCommandBarUtilWrapper : ExcelCommandBarUtilBase
     {
+        public static readonly IExcelCommandBarUtil Instance = new ExcelCommandBarUtilWrapper();
+
         public override CommandBars GetCommandBars()
         {
             return ExcelCommandBarUtil.GetCommandBars();

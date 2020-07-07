@@ -2,6 +2,8 @@
 {
     public class ComServerWrapper : ComServerBase
     {
+        public static readonly IComServer Instance = new ComServerWrapper();
+
         public override int DllRegisterServer()
         {
             return ComServer.DllRegisterServer();

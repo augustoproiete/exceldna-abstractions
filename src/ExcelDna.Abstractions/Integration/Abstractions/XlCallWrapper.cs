@@ -2,6 +2,8 @@
 {
     public class XlCallWrapper : XlCallBase
     {
+        public static readonly IXlCall Instance = new XlCallWrapper();
+
         public override object Excel(int xlFunction, params object[] parameters)
         {
             return XlCall.Excel(xlFunction, parameters);

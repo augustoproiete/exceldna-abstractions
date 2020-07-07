@@ -5,6 +5,8 @@ namespace ExcelDna.Registration.Abstractions
 {
     public class AsyncRegistrationWrapper : AsyncRegistrationBase
     {
+        public static readonly IAsyncRegistration Instance = new AsyncRegistrationWrapper();
+
         public override IEnumerable<ExcelFunctionRegistrationBase> ProcessAsyncRegistrations(IEnumerable<ExcelFunctionRegistrationBase> registrationEntries, bool nativeAsyncIfAvailable = false)
         {
             var materializedEntries = registrationEntries.ToArray();

@@ -4,6 +4,8 @@ namespace ExcelDna.Integration.CustomUI.Abstractions
 {
     public class CustomTaskPaneFactoryWrapper : CustomTaskPaneFactoryBase
     {
+        public static readonly ICustomTaskPaneFactory Instance = new CustomTaskPaneFactoryWrapper();
+
         public override CustomTaskPane CreateCustomTaskPane(Type userControlType, string title)
         {
             return CustomTaskPaneFactory.CreateCustomTaskPane(userControlType, title);
