@@ -22,6 +22,7 @@ namespace ExcelDna.Integration.Abstractions
             throw new NotImplementedException();
         }
 
+        [Obsolete("ExcelObservableOptions is obsolete. Can't support the NoAutoStartOnOpen option anymore.")]
         public virtual object Observe(string callerFunctionName, object callerParameters, ExcelObservableOptions options, ExcelObservableSource observableSource)
         {
             throw new NotImplementedException();

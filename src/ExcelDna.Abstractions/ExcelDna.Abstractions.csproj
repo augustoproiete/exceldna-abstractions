@@ -1,108 +1,54 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{6A6312E5-43BD-498D-B3E7-5BF6940172CD}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFrameworks>net45;net461;net472;net48</TargetFrameworks>
     <RootNamespace>ExcelDna</RootNamespace>
+
     <AssemblyName>ExcelDna.Abstractions</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <GenerateAssemblyVersionAttribute>true</GenerateAssemblyVersionAttribute>
+    <GenerateAssemblyFileVersionAttribute>true</GenerateAssemblyFileVersionAttribute>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+
+    <NoWarn>$(NoWarn);NU5048</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TreatSpecificWarningsAsErrors />
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="ExcelDna.Integration, Version=1.1.0.0, Culture=neutral, PublicKeyToken=f225e9659857edbe, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\ExcelDna.Integration.1.1.0\lib\ExcelDna.Integration.dll</HintPath>
-    </Reference>
-    <Reference Include="ExcelDna.Registration, Version=1.1.0.0, Culture=neutral, PublicKeyToken=f225e9659857edbe, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\ExcelDna.Registration.1.1.0\lib\net40\ExcelDna.Registration.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="ComInterop\Abstractions\ComServerBase.cs" />
-    <Compile Include="ComInterop\Abstractions\ComServerWrapper.cs" />
-    <Compile Include="ComInterop\Abstractions\IComServer.cs" />
-    <Compile Include="Integration\Abstractions\ExcelComAddInHelperBase.cs" />
-    <Compile Include="Integration\Abstractions\ExcelComAddInHelperWrapper.cs" />
-    <Compile Include="Integration\Abstractions\IExcelComAddInHelper.cs" />
-    <Compile Include="Integration\Abstractions\ExcelAsyncUtilBase.cs" />
-    <Compile Include="Integration\Abstractions\ExcelAsyncUtilWrapper.cs" />
-    <Compile Include="Integration\Abstractions\ExcelDnaUtilBase.cs" />
-    <Compile Include="Integration\Abstractions\ExcelDnaUtilWrapper.cs" />
-    <Compile Include="Integration\Abstractions\ExcelReferenceBase.cs" />
-    <Compile Include="Integration\Abstractions\ExcelReferenceWrapper.cs" />
-    <Compile Include="Integration\Abstractions\IExcelDnaUtil.cs" />
-    <Compile Include="Integration\Abstractions\ExcelErrorUtilBase.cs" />
-    <Compile Include="Integration\Abstractions\ExcelErrorUtilWrapper.cs" />
-    <Compile Include="Integration\Abstractions\ExcelIntegrationBase.cs" />
-    <Compile Include="Integration\Abstractions\ExcelIntegrationWrapper.cs" />
-    <Compile Include="Integration\Abstractions\IExcelAsyncUtil.cs" />
-    <Compile Include="Integration\Abstractions\IExcelErrorUtil.cs" />
-    <Compile Include="Integration\Abstractions\IExcelIntegration.cs" />
-    <Compile Include="Integration\Abstractions\IXlCall.cs" />
-    <Compile Include="Integration\CustomUI\Abstractions\CustomTaskPaneFactoryBase.cs" />
-    <Compile Include="Integration\CustomUI\Abstractions\CustomTaskPaneFactoryWrapper.cs" />
-    <Compile Include="Integration\CustomUI\Abstractions\ExcelCommandBarUtilBase.cs" />
-    <Compile Include="Integration\CustomUI\Abstractions\ExcelCommandBarUtilWrapper.cs" />
-    <Compile Include="Integration\CustomUI\Abstractions\ICustomTaskPaneFactory.cs" />
-    <Compile Include="Integration\CustomUI\Abstractions\IExcelCommandBarUtil.cs" />
-    <Compile Include="Logging\Abstractions\ILogDisplay.cs" />
-    <Compile Include="Logging\Abstractions\LogDisplayBase.cs" />
-    <Compile Include="Logging\Abstractions\DisplayOrder.cs" />
-    <Compile Include="Logging\Abstractions\LogDisplayWrapper.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Integration\Abstractions\XlCallBase.cs" />
-    <Compile Include="Integration\Abstractions\XlCallWrapper.cs" />
-    <Compile Include="Registration\Abstractions\AsyncRegistrationBase.cs" />
-    <Compile Include="Registration\Abstractions\AsyncRegistrationWrapper.cs" />
-    <Compile Include="Registration\Abstractions\ExcelCommandRegistrationBase.cs" />
-    <Compile Include="Registration\Abstractions\ExcelCommandRegistrationWrapper.cs" />
-    <Compile Include="Registration\Abstractions\ExcelFunctionRegistrationBase.cs" />
-    <Compile Include="Registration\Abstractions\ExcelFunctionRegistrationWrapper.cs" />
-    <Compile Include="Registration\Abstractions\ExcelRegistrationBase.cs" />
-    <Compile Include="Registration\Abstractions\ExcelRegistrationWrapper.cs" />
-    <Compile Include="Registration\Abstractions\IAsyncRegistration.cs" />
-    <Compile Include="Registration\Abstractions\IExcelRegistration.cs" />
-    <Compile Include="Registration\Abstractions\ITypeConversion.cs" />
-    <Compile Include="Registration\Abstractions\TypeConversionBase.cs" />
-    <Compile Include="Registration\Abstractions\TypeConversionWrapper.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ExcelDna.Abstractions.nuspec" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup />
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
   <PropertyGroup>
-    <PostBuildEvent>
-    </PostBuildEvent>
+    <MinClientVersion>3.3</MinClientVersion>
+    <PackageId>ExcelDna.Abstractions</PackageId>
+    <Version>0.0.1-local</Version>
+    <Authors>C. Augusto Proiete &amp; Contributors</Authors>
+    <Company>augustoproiete.net</Company>
+    <Description>ExcelDna.Abstractions is a library that abstracts Excel-DNA classes such as `ExcelDnaUtil`, `ExcelAsyncUtil`, and many other classes so you can easily mock them and write unit tests against your Excel Add-Ins built with Excel-DNA.</Description>
+    <Copyright>Copyright 2013-2020 C. Augusto Proiete &amp; Contributors - Provided under the Apache License, Version 2.0</Copyright>
+    <PackageTags>excel-dna;exceldna;abstractions;mock;mockobjects;tdd;unit-testing;excel</PackageTags>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageIcon>images\icon.png</PackageIcon>
+    <PackageIconUrl>https://raw.githubusercontent.com/augustoproiete/exceldna-abstractions/master/assets/exceldna-abstractions-nuget.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/augustoproiete/exceldna-abstractions</PackageProjectUrl>
+    <PackageReleaseNotes>https://github.com/augustoproiete/exceldna-abstractions/releases</PackageReleaseNotes>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/augustoproiete/exceldna-abstractions</RepositoryUrl>
   </PropertyGroup>
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+
+  <PropertyGroup>
+    <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ExcelDna.Integration" Version="1.1.0" />
+    <PackageReference Include="ExcelDna.Registration" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\assets\exceldna-abstractions-nuget.png" Pack="true" Visible="false" PackagePath="images\icon.png" />
+  </ItemGroup>
 </Project>

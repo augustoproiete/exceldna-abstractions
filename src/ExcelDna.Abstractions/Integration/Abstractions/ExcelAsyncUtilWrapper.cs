@@ -24,6 +24,7 @@ namespace ExcelDna.Integration.Abstractions
             return ExcelAsyncUtil.Observe(callerFunctionName, callerParameters, observableSource);
         }
 
+        [Obsolete("ExcelObservableOptions is obsolete. Can't support the NoAutoStartOnOpen option anymore.")]
         public override object Observe(string callerFunctionName, object callerParameters, ExcelObservableOptions options, ExcelObservableSource observableSource)
         {
             return ExcelAsyncUtil.Observe(callerFunctionName, callerParameters, options, observableSource);
