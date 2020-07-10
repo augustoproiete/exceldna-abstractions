@@ -4,6 +4,8 @@ namespace ExcelDna.IntelliSense.Abstractions
 {
     public class IntelliSenseServerWrapper : IntelliSenseServerBase
     {
+        public static readonly IIntelliSenseServer Instance = new IntelliSenseServerWrapper();
+
         [Obsolete("IntelliSenseServer now requires matching calls to Install (inside AutoOpen) and Uninstall (inside AutoClose)", true)]
         public override void Register()
         {
