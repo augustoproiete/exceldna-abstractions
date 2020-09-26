@@ -14,13 +14,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{A6B911
 		.gitignore = .gitignore
 		CHANGES.md = CHANGES.md
 		CODEOWNERS = CODEOWNERS
+		Directory.Build.props = Directory.Build.props
 		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelDna.Registration.Abstractions", "src\ExcelDna.Registration.Abstractions\ExcelDna.Registration.Abstractions.csproj", "{915D71F9-BE6D-4008-A49E-CE6240CF44C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelDna.Registration.Abstractions", "src\ExcelDna.Registration.Abstractions\ExcelDna.Registration.Abstractions.csproj", "{915D71F9-BE6D-4008-A49E-CE6240CF44C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelDna.IntelliSense.Abstractions", "src\ExcelDna.IntelliSense.Abstractions\ExcelDna.IntelliSense.Abstractions.csproj", "{7F2AFF86-E408-42BC-9E85-0829ADD69F2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelDna.IntelliSense.Abstractions", "src\ExcelDna.IntelliSense.Abstractions\ExcelDna.IntelliSense.Abstractions.csproj", "{7F2AFF86-E408-42BC-9E85-0829ADD69F2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
