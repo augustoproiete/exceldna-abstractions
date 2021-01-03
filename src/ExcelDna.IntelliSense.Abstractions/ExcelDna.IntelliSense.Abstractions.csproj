@@ -33,7 +33,7 @@
     <Authors>C. Augusto Proiete &amp; Contributors</Authors>
     <Company>augustoproiete.net</Company>
     <Description>ExcelDna.IntelliSense.Abstractions is a library that abstracts ExcelDna.IntelliSense classes such as `IntelliSenseServer`, so you can easily mock them and write unit tests against your Excel add-ins built with Excel-DNA.</Description>
-    <Copyright>Copyright 2013-2020 C. Augusto Proiete &amp; Contributors - Provided under the Apache License, Version 2.0</Copyright>
+    <Copyright>Copyright 2013-2021 C. Augusto Proiete &amp; Contributors - Provided under the Apache License, Version 2.0</Copyright>
     <PackageTags>excel-dna;exceldna;abstractions;intellisense;mock;mockobjects;tdd;unit-testing;excel</PackageTags>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageIcon>images\icon.png</PackageIcon>
