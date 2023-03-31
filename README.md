@@ -34,4 +34,4 @@ Click on the [Releases](https://github.com/augustoproiete/exceldna-abstractions/
 
 ---
 
-_Copyright &copy; 2013-2021 C. Augusto Proiete & Contributors - Provided under the [Apache License, Version 2.0](LICENSE)._
+_Copyright &copy; 2013-2023 C. Augusto Proiete & Contributors - Provided under the [Apache License, Version 2.0](LICENSE)._

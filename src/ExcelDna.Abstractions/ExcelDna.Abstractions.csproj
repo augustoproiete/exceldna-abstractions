@@ -33,7 +33,7 @@
     <Authors>C. Augusto Proiete &amp; Contributors</Authors>
     <Company>augustoproiete.net</Company>
     <Description>ExcelDna.Abstractions is a library that abstracts Excel-DNA classes such as `ExcelDnaUtil`, `ExcelAsyncUtil`, and many other classes so you can easily mock them and write unit tests against your Excel add-ins built with Excel-DNA.</Description>
-    <Copyright>Copyright 2013-2021 C. Augusto Proiete &amp; Contributors - Provided under the Apache License, Version 2.0</Copyright>
+    <Copyright>Copyright 2013-2023 C. Augusto Proiete &amp; Contributors - Provided under the Apache License, Version 2.0</Copyright>
     <PackageTags>excel-dna;exceldna;abstractions;mock;mockobjects;tdd;unit-testing;excel</PackageTags>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageIcon>images\icon.png</PackageIcon>
